@@ -1,0 +1,98 @@
+:root{
+    --background-color:  rgb(6, 11, 25);
+    --border-color: rgb(255,255,255,0.1);
+}
+
+body{
+    background-image:url("img/blue-hue-different-colors-in.jpg") ;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+}
+* {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,a,p,span{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    font-size: larger;
+    color: antiquewhite;
+
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+}
+nav > .nav-section{
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 0rem;
+    border-left: 1px solid var(--border-color);
+    align-items: center;
+    justify-content: center;
+    
+}
+#nav-logo-section,
+#nav-link-section{
+    flex-basis: calc(100%/3);
+    gap: 6rem;
+    
+}
+#nav-logo-section{
+    flex-basis: calc(100%/3);
+    justify-content: flex-start;
+}
+
+
+#nav-social-section,
+#nav-contact-section{
+    flex-grow: 1;
+}
+
+#nav-social-section{
+    gap: 6rem;
+    font-size: 1.5rem;
+}
+.avatar{
+    border-radius: 50%;
+}
+main{
+    flex-grow: 1;
+}
+main > article{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 3fr 1fr ;
+}
+main > article > .article-section {
+    height: 100%;
+    border: 1px solid var(--border-color);
+}
+main > article > .image-section {
+    background-image: url("img/wp8626212-computer-dark-grey-aesthetic-wallpapers\ \(1\).jpg") ;
+background-position: center;
+background-size: cover;
+
+}
+
+main > article > .description-section {
+
+    background-image: url("img/wallpaperflare.com_wallpaper\ \(3\).jpg");
+    background-position:bottom;
+    background-size: cover;
+}
+.avatar1{
+border-radius: 50%;    
+margin-left: 550px;
+    margin-top: 150px;
+}
